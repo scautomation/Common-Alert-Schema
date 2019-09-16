@@ -1,0 +1,96 @@
+{
+    "headers": {
+        "Connection": "Keep-Alive",
+        "Expect": "100-continue",
+        "Host": "prod-13.centralus.logic.azure.com",
+        "User-Agent": "IcMBroadcaster/1.0",
+        "X-CorrelationContext": "RkkKACgAAAACAAAAEACSejxRAO1FTLKBmTUhEBe/AQAQAOhiZarYKhZFl/8buMig6gc=",
+        "Content-Length": "2617",
+        "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+        "schemaId": "azureMonitorCommonAlertSchema",
+        "data": {
+            "essentials": {
+                "alertId": "/subscriptions/8cc0b3a6-6758-4312-n8dr-24323946ddd3/providers/Microsoft.AlertsManagement/alerts/cc5671c9-1bc7-3427-86gg-2cc7b7b9cb16",
+                "alertRule": "Service Stopped",
+                "severity": "Sev2",
+                "signalType": "Log",
+                "monitorCondition": "Fired",
+                "monitoringService": "Log Analytics",
+                "alertTargetIDs": [
+                    "/subscriptions/8cc1a4b7-7849-4303-b6ae-13e38074cce2/resourcegroups/vs_monitoring/providers/microsoft.operationalinsights/workspaces/vs-sandlot"
+                ],
+                "originAlertId": "7624ef34-51fc-40a6-8d16-5648d78bc9b3",
+                "firedDateTime": "2019-09-14T02:48:39.8768676Z",
+                "description": "",
+                "essentialsVersion": "1.0",
+                "alertContextVersion": "1.1"
+            },
+            "alertContext": {
+                "SearchQuery": "ConfigurationData\n| where SvcName == \"Spooler\" and SvcState == \"Stopped\" \n| project Computer, SvcName, SvcState, SvcDisplayName, TimeGenerated",
+                "SearchIntervalStartTimeUtc": "2019-09-14T02:32:13Z",
+                "SearchIntervalEndtimeUtc": "2019-09-14T02:42:13Z",
+                "ResultCount": 1,
+                "LinkToSearchResults": "https://portal.azure.com#@ff27de54-8248-4ffb-85a7-3f2d0e62b2cf/blade/Microsoft_OperationsManagementSuite_Workspace/AnalyticsBlade/initiator/AnalyticsShareLinkToQuery/isQueryEditorVisible/true/scope/%7B%22resources%22%3A%5B%7B%22resourceId%22%3A%22%2Fsubscriptions%2F8cc1a4b7-7849-4303-b6ae-13e38074cce2%2FresourceGroups%2Fvs_monitoring%2Fproviders%2FMicrosoft.OperationalInsights%2Fworkspaces%2FVS-Sandlot%22%7D%5D%7D/query/ConfigurationData%0A%7C%20where%20SvcName%20%3D%3D%20%22Spooler%22%20and%20SvcState%20%3D%3D%20%22Stopped%22%20%0A%7C%20project%20Computer%2C%20SvcName%2C%20SvcState%2C%20SvcDisplayName%2C%20TimeGenerated/isQuerybase64Compressed/false/timespanInIsoFormat/2019-09-14T02%3a32%3a13.0000000Z%2f2019-09-14T02%3a42%3a13.0000000Z",
+                "SeverityDescription": "Informational",
+                "WorkspaceId": "8cc0b3a6-6758-4312-n8dr-24323946ddd3",
+                "SearchIntervalDurationMin": "10",
+                "AffectedConfigurationItems": [
+                    "FS01.Sandlot.dom"
+                ],
+                "AlertType": "Number of results",
+                "SearchIntervalInMinutes": "10",
+                "SearchResults": {
+                    "tables": [
+                        {
+                            "name": "PrimaryResult",
+                            "columns": [
+                                {
+                                    "name": "Computer",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "SvcName",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "SvcState",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "SvcDisplayName",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "TimeGenerated",
+                                    "type": "datetime"
+                                }
+                            ],
+                            "rows": [
+                                [
+                                    "FS01.Sandlot.dom",
+                                    "Spooler",
+                                    "Stopped",
+                                    "Print Spooler",
+                                    "2019-09-14T02:41:43.013Z"
+                                ]
+                            ]
+                        }
+                    ],
+                    "dataSources": [
+                        {
+                            "resourceId": "/subscriptions/8cc0b3a6-6758-4312-n8dr-24323946ddd3/resourcegroups/vs_monitoring/providers/microsoft.operationalinsights/workspaces/vs-sandlot",
+                            "tables": [
+                                "ConfigurationData"
+                            ]
+                        }
+                    ]
+                },
+                "Threshold": 0,
+                "Operator": "Greater Than",
+                "IncludedSearchResults": "True"
+            }
+        }
+    }
+}
