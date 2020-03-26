@@ -1,0 +1,57 @@
+{
+    "schemaId": "azureMonitorCommonAlertSchema",
+    "data": {
+        "essentials": {
+            "alertId": "/subscriptions/{subscriptionId}/providers/Microsoft.AlertsManagement/alerts/0a69cbb68e8a78d4b59b8e0e0a29708d26a1c42dbc20b45c2595cb8c1e44dde5",
+            "alertRule": "rule name",
+            "severity": "Sev4",
+            "signalType": "Activity Log",
+            "monitorCondition": "Fired",
+            "monitoringService": "ServiceHealth",
+            "alertTargetIDs": [
+                "/subscriptions/{subscriptionId}"
+            ],
+            "originAlertId": "f3188147-87af-45a7-8ec2-1a7c387ef3bf",
+            "firedDateTime": "2020-03-23T17:51:56.1274414",
+            "description": "Resolved: Storage - North Europe - Mitigated",
+            "essentialsVersion": "1.0",
+            "alertContextVersion": "1.0"
+        },
+        "alertContext": {
+            "authorization": null,
+            "channels": 1,
+            "claims": null,
+            "caller": null,
+            "correlationId": "93876aac-a502-4449-a3e7-61c5a66831cd",
+            "eventSource": 2,
+            "eventTimestamp": "2020-03-23T17:51:53.5778054+00:00",
+            "httpRequest": null,
+            "eventDataId": "f3188147-87af-45a7-8ec2-1a7c387ef3bf",
+            "level": 3,
+            "operationName": "Microsoft.ServiceHealth/incident/action",
+            "operationId": "93876aac-a502-4449-a3e7-61c5a66831cd",
+            "properties": {
+                "title": "Storage - North Europe - Mitigated",
+                "service": "Storage",
+                "region": "North Europe",
+                "communication": "<strong>Summary\nof impact:</strong> Between 15:40 and 16:20 UTC on 23\nMar 2020, you were identified as a customer in North Europe using\nstorage who may have seen errors connecting to resources hosted in this region.\n<p></p><strong>Preliminary\nroot cause:</strong> Engineers determined that a single storage scale unit in this\nregion was affected by a power event.<p></p><strong>Mitigation:</strong>\nEngineers cycled the power units on the affected storage scale unit to mitigate\nthe issue. <p></p><strong>Next steps:</strong> Engineers will continue to investigate to establish the full\nroot cause and prevent future occurrences. Stay informed about Azure service\nissues by creating custom service health alerts: <a href=\"https://aka.ms/ash-videos\">https://aka.ms/ash-videos</a> for video tutorials and <a href=\"https://aka.ms/ash-alerts\">https://aka.ms/ash-alerts</a> for how-to documentation.<p></p>",
+                "incidentType": "Incident",
+                "trackingId": "ZT_1-J90",
+                "impactStartTime": "2020-03-23T16:40:51.8091132Z",
+                "impactMitigationTime": "2020-03-23T16:20:00Z",
+                "impactedServices": "[{\"ImpactedRegions\":[{\"RegionName\":\"North Europe\"}],\"ServiceName\":\"Storage\"}]",
+                "impactedServicesTableRows": "<tr>\r\n<td align='center' style='padding: 5px 10px; border-right:1px solid black; border-bottom:1px solid black'>Storage</td>\r\n<td align='center' style='padding: 5px 10px; border-bottom:1px solid black'>North Europe<br></td>\r\n</tr>\r\n",
+                "defaultLanguageTitle": "Storage - North Europe - Mitigated",
+                "defaultLanguageContent": "<strong>Summary\nof impact:</strong> Between 15:40 and 16:20 UTC on 23\nMar 2020, you were identified as a customer in North Europe using\nstorage who may have seen errors connecting to resources hosted in this region.\n<p></p><strong>Preliminary\nroot cause:</strong> Engineers determined that a single storage scale unit in this\nregion was affected by a power event.<p></p><strong>Mitigation:</strong>\nEngineers cycled the power units on the affected storage scale unit to mitigate\nthe issue. <p></p><strong>Next steps:</strong> Engineers will continue to investigate to establish the full\nroot cause and prevent future occurrences. Stay informed about Azure service\nissues by creating custom service health alerts: <a href=\"https://aka.ms/ash-videos\">https://aka.ms/ash-videos</a> for video tutorials and <a href=\"https://aka.ms/ash-alerts\">https://aka.ms/ash-alerts</a> for how-to documentation.<p></p>",
+                "stage": "Resolved",
+                "communicationId": "11000045242568",
+                "isHIR": "false",
+                "version": "0.1.1"
+            },
+            "status": "Resolved",
+            "subStatus": null,
+            "submissionTimestamp": "2020-03-23T17:51:56.1274414+00:00",
+            "ResourceType": null
+        }
+    }
+}
