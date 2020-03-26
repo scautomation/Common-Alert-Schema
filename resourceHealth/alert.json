@@ -1,0 +1,41 @@
+{
+    "schemaId": "azureMonitorCommonAlertSchema",
+    "data": {
+        "essentials": {
+            "alertId": "/subscriptions/{subscriptionid}/providers/Microsoft.AlertsManagement/alerts/e08f860a-f210-4198-8e5b-31d7130afb3a",
+            "alertRule": "Rule name",
+            "severity": "Sev4",
+            "signalType": "Activity Log",
+            "monitorCondition": "Fired",
+            "monitoringService": "Resource Health",
+            "alertTargetIDs": [
+                "/subscriptions/{subscriptionid}/resourcegroups/{resourceGroupName}/providers/microsoft.compute/virtualmachines/aks-agentpool-24065462-0"
+            ],
+            "originAlertId": "0dfb8627-806a5f90-231d-40ec-9358-3a6dcd10179bfa99-4250-9571-05cbe1777793",
+            "firedDateTime": "2020-03-26T07:14:03.9050215Z",
+            "description": null,
+            "essentialsVersion": "1.0",
+            "alertContextVersion": "1.0"
+        },
+        "alertContext": {
+            "channels": "Admin, Operation",
+            "correlationId": "d2745152-0d8a-45c1-ac82-80071734f00c",
+            "eventSource": "ResourceHealth",
+            "eventTimestamp": "2020-03-26T07:11:14.632+00:00",
+            "eventDataId": "0dfb8627-fa99-4250-9571-05cbe1777793",
+            "level": "Informational",
+            "operationName": "Microsoft.Resourcehealth/healthevent/Activated/action",
+            "operationId": "0dfb8627-fa99-4250-9571-05cbe1777793",
+            "properties": {
+                "title": "Unknown",
+                "details": "Unknown",
+                "currentHealthStatus": "Unavailable",
+                "previousHealthStatus": "Available",
+                "type": "Downtime",
+                "cause": "Unknown"
+            },
+            "status": "Active",
+            "submissionTimestamp": "2020-03-26T07:14:03.3786503+00:00"
+        }
+    }
+  }
